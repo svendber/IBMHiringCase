@@ -5,11 +5,7 @@ ini_set("display_errors", 1);
 ini_set("log_errors", 1);
 
 require "layout/header.php";
-//include "backend/config.php";
-include "backend/backendTest.php";
-
-//session_start();
-//header('Location: newPage.php');
+include "backend/backendSignIn.php";
  ?>
 
 <body>

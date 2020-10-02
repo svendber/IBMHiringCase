@@ -4,6 +4,7 @@ include "config.php";
 session_start();
 ini_set("display_errors", 1);
 ini_set("log_errors", 1);
+
 if (isset($_POST['register'])) {
     $firstName = $_POST['firstName'];
     $lastName = $_POST['lastName'];
@@ -32,7 +33,7 @@ if (isset($_POST['register'])) {
         $query = pg_query($dbconn,"INSERT INTO users(USERNAME,PASSWORD,EMAIL, first_name, last_name, team) VALUES ('$username', '$password_hash','$email','$firstName','$lastName','$teams')");
         if ($query) {
             echo '<p class="success">Your registration was successful! You will be redirected back to Login!</p>';
-            header( "refresh:3;url=../virtualBoard.php" );
+            header( "refresh:3;url=../login.php" );
         } else {
             echo '<p class="error">Something went wrong!</p>';
         }

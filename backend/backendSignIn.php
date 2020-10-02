@@ -24,7 +24,7 @@ if (isset($_POST['login'])){
             $_SESSION['user_id'] = $queryArray[0];
             echo  $_SESSION['user_id'];
             echo '<p class="success">Congratulations, you are logged in!</p>';
-            header('Location: newPage.php');
+            header('Location: virtualBoard.php');
         } else {
             echo '<p class="error">Username password combination is wrong!</p>';
         }
