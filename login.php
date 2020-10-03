@@ -4,8 +4,8 @@
 ini_set("display_errors", 1);
 ini_set("log_errors", 1);
 
-require "layout/header.php";
-include "backend/backendSignIn.php";
+require (dirname(__FILE__)."/layout/header.php");
+include (dirname(__FILE__)."/backend/backendSignIn.php");
  ?>
 
 <body>

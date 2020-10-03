@@ -10,6 +10,9 @@
             padding-bottom: 40px;
             background-color: #ADABAB;
         }
+        body {
+            text-align: center;
+        }
 
         .form-signin {
             max-width: 330px;
@@ -58,6 +61,18 @@
         h2{
             text-align: center;
             color: #017572;
+        }
+        p.success,
+        p.error {
+            color: white;
+            font-family: lato;
+            background: yellowgreen;
+            display: inline-block;
+            padding: 2px 10px;
+        }
+
+        p.error {
+            background: orangered;
         }
     </style>
 

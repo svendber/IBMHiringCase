@@ -54,7 +54,10 @@
         color: white;
         border: none;
     }
-
+    h2{
+        text-align: center;
+        color: #017572;
+    }
     p.success,
     p.error {
         color: white;

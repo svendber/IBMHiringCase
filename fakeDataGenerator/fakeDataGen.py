@@ -9,9 +9,8 @@ from mimesis.builtins import DenmarkSpecProvider
 import json
 import random
 
-movie_list = ['holiday', 'great', 'nice']
 Internet = Internet()
-text= Text('da')
+text= Text()
 
 generic = Generic('da')
 DenmarkSpecProvider.Meta.name = 'DK'
@@ -27,8 +26,8 @@ def fake_data():
 		'telephone':person.telephone('########'),
         'email': person.email(),
         'cpr': generic.DK.cpr(),
-        'image': Internet.stock_image(width=680, height=420, keywords="nice"),
-        'text': text.text()
+        'image': Internet.stock_image(width=240, height=120),
+        'quote': text.quote()
 	}
 
 	temp.append(people)

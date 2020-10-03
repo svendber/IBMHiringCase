@@ -1,8 +1,8 @@
 <?php
 
 //include('backend/config.php');
-include ('layout/headerSignUp.php');
-include ('backend/backendSignUp.php');
+include (dirname(__FILE__).'/layout/headerSignUp.php');
+include (dirname(__FILE__).'/backend/backendSignUp.php');
 
 
 ?>
