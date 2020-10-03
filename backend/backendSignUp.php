@@ -1,6 +1,6 @@
 <?php
 
-include (dirname(__FILE__)."config.php");
+include (dirname(__FILE__)."/config.php");
 session_start();
 ini_set("display_errors", 1);
 ini_set("log_errors", 1);
@@ -13,6 +13,7 @@ if (isset($_POST['register'])) {
     $password = $_POST['password'];
     $confirmPassword = $_POST['confirmPassword'];
     $teams = $_POST['teams'];
+    $roleId = 1;
     $password_hash = password_hash($password, PASSWORD_BCRYPT);
     $password_confirm_hash = password_hash($confirmPassword, PASSWORD_BCRYPT);
 
@@ -28,7 +29,7 @@ if (isset($_POST['register'])) {
     }
 
     if ($rows == 0 && $password === $confirmPassword) {
-        $query = pg_query($dbconn,"INSERT INTO users(username,password,email, first_name, last_name, team) VALUES ('$username', '$password_hash','$email','$firstName','$lastName','$teams')");
+        $query = pg_query($dbconn,"INSERT INTO users(username,password,email, first_name, last_name, team, role_id) VALUES ('$username', '$password_hash','$email','$firstName','$lastName','$teams', '$roleId')");
         if ($query) {
             echo '<p class="success">Your registration was successful! You will be redirected back to Login!</p>';
             header( "refresh:3;url=login.php" );
