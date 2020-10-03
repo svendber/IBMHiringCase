@@ -2,14 +2,14 @@
 
 Requirements: 
 
-Apache2
-Php7.0+
-php-gd
-php-pgsql
-php-pdo
-Python 3.6+
+#Apache2
+#Php7.0+
+#php-gd
+#php-pgsql
+#php-pdo
+#Python 3.6+
 
-postgresql:
+Postgresql:
 user: postgres
 DB  : ibm
 password : 1234
