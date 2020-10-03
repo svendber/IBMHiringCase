@@ -1,13 +1,13 @@
 # IBMHiringCase
 
-Requirements: 
+## Requirements: 
 
-*Apache2
-*Php7.0+
-*#php-gd
-*#php-pgsql
-*#php-pdo
-*Python 3.6+
+* Apache2
+* Php7.0+
+* php-gd
+* php-pgsql
+* php-pdo
+* Python 3.6+
 
 Postgresql:
 user: postgres
