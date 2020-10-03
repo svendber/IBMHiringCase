@@ -1,6 +1,6 @@
 <?php
 
-include (dirname(__FILE__)."config.php");
+include (dirname(__FILE__)."/config.php");
 session_start();
 ini_set("display_errors", 1);
 ini_set("log_errors", 1);
